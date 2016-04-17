@@ -14,4 +14,12 @@ analysis relevant to the domain.
     3. Pattern analysis where people behavior and shoppers' buying behavior are
     collected and patterns found.
     ---(Leykin A, Tuceryan M (2007) Detecting shopper groups in video sequences.)
-    Cameras is the eye of the surveillance system of 
+    Cameras is the eye of the surveillance system of surveillance system. Camera's
+    placement play a vital role in handling occlusion.
+    The basic steps involved in processing a video are
+    1）video segmentation,
+    2）Motion detection (background modeling, foreground segmentation),
+    3）object classification,
+    4）motion tracking and finally,
+    5）activity recognition
+    The five elements is shown in Fig. 1.
