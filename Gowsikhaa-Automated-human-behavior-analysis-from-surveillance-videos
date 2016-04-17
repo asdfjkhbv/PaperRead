@@ -6,3 +6,11 @@ into two classes
         2. Automatic summarize content of the objects that is tracking and recognizing
     AND the semantics can extend surveillance systems to perform event-based behavior
 analysis relevant to the domain.
+1. INTRODUCTION
+    Three usage of the surveillance systems
+    1. Video surveillance acts as a security mechanism
+    2. This paper give an surveillance systems to monitor children and old people.
+    ---(Liao S-K, Liu B-Y (2010) An edge-based approach to improve optical flow algorithm.)
+    3. Pattern analysis where people behavior and shoppers' buying behavior are
+    collected and patterns found.
+    ---(Leykin A, Tuceryan M (2007) Detecting shopper groups in video sequences.)
