@@ -23,3 +23,22 @@ analysis relevant to the domain.
     4）motion tracking and finally,
     5）activity recognition
     The five elements is shown in Fig. 1.
+    To make a machine to watch videos , the videos should be handled by the
+    following steps.
+    Firstly, split video into a sequence of images(frames) .
+    Secondly, use the motion detecting technique to find the moving objects.
+        IN THIS STEP, motion detecting include {
+                                                  background modeling,
+          (extract background image from a sequence of frames)
+                                                  foreground modeling
+          (segment out a noisy image with moving objects in it)
+                                                  and foreground processing
+          (remove noise from the result oft the previous )
+                                                  }
+    AFTER motion detection, the video handling enter the step of OBJECT CLASSIFICATION
+    --(object classification).
+    IN THIS SECTION, the blob in the foreground is categorized into object types.
+    motion tracking (motion detection & object classification & motion tracking ) produce
+    useful results for human behavior analysis.
+    The types of behaviors that can be analyzed are represented in
+    Fig.2:Categorization of human behaviors.
