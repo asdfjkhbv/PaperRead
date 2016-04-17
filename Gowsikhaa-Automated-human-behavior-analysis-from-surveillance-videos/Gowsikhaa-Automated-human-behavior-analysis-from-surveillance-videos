@@ -1,0 +1,44 @@
+Abstract
+    The use of the Automation of abnormal human behavior analysis can be categorized
+into two classes
+        1. Decrease the time of surveillance system which is used to store the activities
+           that happened in the application context.
+        2. Automatic summarize content of the objects that is tracking and recognizing
+    AND the semantics can extend surveillance systems to perform event-based behavior
+analysis relevant to the domain.
+1. INTRODUCTION
+    Three usage of the surveillance systems
+    1. Video surveillance acts as a security mechanism
+    2. This paper give an surveillance systems to monitor children and old people.
+    ---(Liao S-K, Liu B-Y (2010) An edge-based approach to improve optical flow algorithm.)
+    3. Pattern analysis where people behavior and shoppers' buying behavior are
+    collected and patterns found.
+    ---(Leykin A, Tuceryan M (2007) Detecting shopper groups in video sequences.)
+    Cameras is the eye of the surveillance system of surveillance system. Camera's
+    placement play a vital role in handling occlusion.
+    The basic steps involved in processing a video are
+    1）video segmentation,
+    2）Motion detection (background modeling, foreground segmentation),
+    3）object classification,
+    4）motion tracking and finally,
+    5）activity recognition
+    The five elements is shown in Fig. 1.
+    To make a machine to watch videos , the videos should be handled by the
+    following steps.
+    Firstly, split video into a sequence of images(frames) .
+    Secondly, use the motion detecting technique to find the moving objects.
+        IN THIS STEP, motion detecting include {
+                                                  background modeling,
+          (extract background image from a sequence of frames)
+                                                  foreground modeling
+          (segment out a noisy image with moving objects in it)
+                                                  and foreground processing
+          (remove noise from the result oft the previous )
+                                                  }
+    AFTER motion detection, the video handling enter the step of OBJECT CLASSIFICATION
+    --(object classification).
+    IN THIS SECTION, the blob in the foreground is categorized into object types.
+    motion tracking (motion detection & object classification & motion tracking ) produce
+    useful results for human behavior analysis.
+    The types of behaviors that can be analyzed are represented in
+    Fig.2:Categorization of human behaviors.
