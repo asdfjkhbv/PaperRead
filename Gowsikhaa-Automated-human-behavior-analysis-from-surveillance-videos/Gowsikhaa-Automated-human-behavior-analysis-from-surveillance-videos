@@ -49,11 +49,11 @@ Abstract
     2.1 Motion detecting methods
         The methods can only segment out the moving objects from origin images.
         In this part, "the required moving objects" == "foreground";
-                      "the unwantted background information" == "background"
+                      "the unwanted background information" == "background"
         Background Modeling can use techniques {
                     medium complexity techniques: approximate mean & approximate median
                     low complexity techniques: first input image is background
-                    another: treat the pervious frame as the current image background
+                    another: treat the previous frame as the current image background
                             }
         Foreground Modeling $$$ {
                                 background subtraction;
@@ -74,7 +74,7 @@ Abstract
         Temporal Differencing:
         PRINCIPLE: the pixel-wise difference(逐像素差异) between two or three consecutive image to extract moving objects.
         Most Frequently used:
-        [Mahadevan V, Vasconcelos N (2009) Segmentation of motion objects from surveillance video sequences using temporal differencing combined with multiple correlation.]
+        [Mahadevan V, Vasconcelos N (2009) Segmentation of motion objects from surveillance video sequences using temporal differencing combined with       multiple correlation.]
         DISADVANTAGEs: It is poor in extracting all relevant pixels.
                        It may be lead the cavities left inside moving entities. (only happen when the object moving slowly or it has uniform textures.)
         SOLUTIONs: adding filtering algorithms.
@@ -82,3 +82,78 @@ Abstract
         Optical Flow:
         It depends on the distribution of apparent velocities of movements of brightness patterns in an image and gives information about arrangement of objects viewed.
         Usage: computationally complex for complex dynamic image analysis.
+    2.2 Object classification methods
+        Object classification can classified and labelled. The accuracy of classification rely on the features that motion detection technique   extracted.
+        This section often use advanced Machine Learning algorithm (such as Neural Networks). Objects' feature can be shape, type of motion.
+        Templates matching is a frequently method for classification. The objects extracted by the foreground image will be compared with a set of templates and it will be measured by similarity measures. If the template and the object in fore ground match or are similar , the appropriate object type is said to have been found.
+        Object classification can be done either after or before background subtraction [Ogale NA (2006) A survey of techniques for human detection from video].
+        If we want classify an object directly from the video input, we should use edge detection algorithms to find out the edges of the current frame and then separate the moving part from it through background subtraction.
+        Two important categorizations of object classification algorithms are
+        {
+                  Motion-based classification methods :
+                  (needs any motion based parameter---[Yoshimitsu Y, Naito T, Fujimura K, Kamijo S (2010) Behavior understanding at railway station by association of locational semantics and postures. ]);
+                  Shape-based classification methods :
+                  (uses the features that best represent the object's shape for classification.---[Lao W, Han J, deWith PHN (2010) Flexible human behavior analysis framework for video surveillance applications.])
+        }
+        Contours Shape is important for classify a human and a non-human. And the Contour Shape Features can be obtained by two ways:
+        {
+          neighbor masking algorithm
+          (used after motion detection.)
+          ---[Liao S-K, Liu B-Y (2010) An edge-based approach to improve optical flow algorithm.]
+          edge masking algorithm
+          (directly from the input frame)
+          ---[Tabb K, Davey N, Adams R, George S (2004) Detecting, tracking & classifying human movement using active contour models and neural networks.]
+        }
+
+        When choosing shape control points from a contour, normalization can be done. Two ways can improve the system.{
+          Normalization
+           can scales up the distances as well as the number of contour points. So, this method can adapt itself for grownups as well as children.
+
+
+
+        } The choice of a pre-defined number of coordinates results in uniformity of the features. [Rougier C, Meunier J, St-Arnaud A, Rousseau J (2011) Robust video surveillance for fall detection based on human shape deformation.]uses a combination of the two methods mentioned above to get a better result. Here the foreground silhouette is combined with the canny edge image.
+   2.3 Motion Tracking Methods
+        Motion Tracking is about to find out the temporary consistency of the moving object and to recognize the new object is or not that has been previously seen. It can use  {
+                                        region-based method;
+                  {
+                  considers variation in the image regions corresponding to the moving objects.---[Brox T, Rosenhahn B, Gall J, Cremers D (2010) Combined region and motion-based 3D tracking of rigid and articulated objects.]
+                  }
+                                        feature-based method;
+                  {
+                  A feature-based technique extracts features from a person and uses them to track the body parts in the subsequent frames.---[Park S, Aggarwal JK (2004) Semantic-level understanding of human actions and interactions using event hierarchy. ] & [Chen Y-K, Lin Y-T, Kung SY (1996) A feature tracking algorithm using neighborhood relaxation with multi-candidate pre-screening.]
+                  }
+                                    contour-based method;
+                  {
+                   tracks only the contour of the object instead of the whole object.
+                   ---[Techmer A (2001) Contour-based motion estimation and object tracking for real-time applications.]
+                   ---[Lee BH, Choi I, Jeon GJ (2006) Motion-based moving object tracking using an active contour.]
+                  }
+                                    part-based & shape control based method;
+                  {
+                  Part based methods
+                  detect the salient points from the objects and then decompose object into a combination of salient points(主要点的结合) ---[Chen M (2010) Long term activity analysis in surveillance video archives]
+                  }
+                  {
+                  Shape control based methods that is highly efficient in tracking objects when occluded and tracking when two objects cross each other.
+                  -----[Kim T, Lee S, Paik J (2011) Combined shape and feature-based video analysis and its application to non-rigid object tracking.]
+                  }
+                                    model-based method;
+                  {
+                  The most common modeling technique used is the stick figure modeling, also known as the skeleton model.---[Lao W, Han J, deWith PHN (2010) Flexible human behavior analysis framework for video surveillance applications.]
+                  }
+                                    combinations of these methods;
+                  {
+                  Hybrid tracking method uses a combination of two or more of these techniques.---[Brox T, Rosenhahn B, Gall J, Cremers D (2010) Combined region and motion-based 3D tracking of rigid and articulated objects.]
+                  }
+              }
+        Tracking a particular person from a crowd or tracking a particular vehicle in a highly populated transit scene is difficult since the objects in background are similar to the object being tracked. Unique co-ordinates can be calculated from the contour, and if the number of coordinates drastically increases or decreases, occlusion is predicted.
+
+        A simple motion tracking algorithm tracks the displacement of a human. Trajectories can be calculated from the displacement of the object’s centre of his/her foot ---[Yoshimitsu Y, Naito T, Fujimura K, Kamijo S (2010) Behavior understanding at railway station by association of locational semantics and postures. ]
+        Motion tracking in an advanced level {
+                            finding out the current pose by body pose modeling,
+                            occlusion handling ,
+                            estimating the trajectories.
+        }
+        Applications which require recognition of simple poses, can just estimate the position of head, hands and legs to form a basic skeleton of the human (Lao et al. 2010). 2D modeling (Lao et al. 2010) is sufficient for this method. ---[Lao W, Han J, deWith PHN (2010) Flexible human behavior analysis framework for video surveillance applications.]
+        For complex applications, along with head, hands and legs, the joints (like ankles, knees) and neck can be identified. This requires 3D modeling (Brown and Capson 2011) for representation.  ---[Brown JA, Capson DW (2011) A framework for 3D model-based visual tracking using a GPU-accelerated particle filter.]
+        For vehicles, the shape of vehicles can be used to handle occlusion. The shape of the vehicle can be used to regenerate (Feris et al. 2011) the missing parts of the vehicle.---[Feris R, Petterson J, Siddiquie B, Brown L, Pankanti S (2011) Large-scale vehicle detection in challenging Urban surveillance environments.]
