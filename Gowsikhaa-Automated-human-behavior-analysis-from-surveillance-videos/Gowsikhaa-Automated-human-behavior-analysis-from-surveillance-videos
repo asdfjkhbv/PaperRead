@@ -1,21 +1,17 @@
 Abstract
-    The use of the Automation of abnormal human behavior analysis can be categorized
-into two classes
-        1. Decrease the time of surveillance system which is used to store the activities
-           that happened in the application context.
+    The use of the Automation of abnormal human behavior analysis can be categorized into two classes
+        1. Decrease the time of surveillance system which is used to store the activities that happened in the application context.
         2. Automatic summarize content of the objects that is tracking and recognizing
-    AND the semantics can extend surveillance systems to perform event-based behavior
-analysis relevant to the domain.
+    AND the semantics can extend surveillance systems to perform event-based behavior analysis relevant to the domain.
 1. INTRODUCTION
     Three usage of the surveillance systems
     1. Video surveillance acts as a security mechanism
     2. This paper give an surveillance systems to monitor children and old people.
-    ---(Liao S-K, Liu B-Y (2010) An edge-based approach to improve optical flow algorithm.)
+    ---[Liao S-K, Liu B-Y (2010) An edge-based approach to improve optical flow algorithm.]
     3. Pattern analysis where people behavior and shoppers' buying behavior are
     collected and patterns found.
-    ---(Leykin A, Tuceryan M (2007) Detecting shopper groups in video sequences.)
-    Cameras is the eye of the surveillance system of surveillance system. Camera's
-    placement play a vital role in handling occlusion.
+    ---[Leykin A, Tuceryan M (2007) Detecting shopper groups in video sequences.]
+    Cameras is the eye of the surveillance system of surveillance system. Camera's placement play a vital role in handling occlusion.
     The basic steps involved in processing a video are
     1）video segmentation,
     2）Motion detection (background modeling, foreground segmentation),
@@ -25,8 +21,7 @@ analysis relevant to the domain.
     The five elements is shown in Fig. 1.
     To make a machine to watch videos , the videos should be handled by the
     following steps.
-    Firstly, split video into a sequence of images(frames) .
-    Secondly, use the motion detecting technique to find the moving objects.
+    Firstly, split video into a sequence of images(frames). Secondly, use the motion detecting technique to find the moving objects.
         IN THIS STEP, motion detecting include {
                                                   background modeling,
           (extract background image from a sequence of frames)
@@ -42,3 +37,48 @@ analysis relevant to the domain.
     useful results for human behavior analysis.
     The types of behaviors that can be analyzed are represented in
     Fig.2:Categorization of human behaviors.
+2. Low-level processing techniques
+    This section introduce the techniques that don't require semantics and just
+    give the objects in order that next step can use.
+    Low-level technique {
+                          background modeling,
+                          foreground detection,
+                          object classification,
+                          simple motion tracking
+                        }
+    2.1 Motion detecting methods
+        The methods can only segment out the moving objects from origin images.
+        In this part, "the required moving objects" == "foreground";
+                      "the unwantted background information" == "background"
+        Background Modeling can use techniques {
+                    medium complexity techniques: approximate mean & approximate median
+                    low complexity techniques: first input image is background
+                    another: treat the pervious frame as the current image background
+                            }
+        Foreground Modeling $$$ {
+                                background subtraction;
+                                temporal differencing;
+                                optical flows
+                                }
+        Background subtraction :
+        Most Frequently used:
+        1)[Javed O, Shafique K, Shah M (2002) A hierarchical approach to robust background subtraction using color and gradient information.]
+        2)[McIvor AM (1999) Background subtraction techniques.]
+        3)[Li W, Zhang Z, Liu Z (2010) Action recognition based on a bag of 3D points. ]
+        Simple Background Subtraction works for static background.
+        Adaptive Background Subtraction use of dynamic background update.
+        ADVANTAGEs: robust to changing background & environmental conditions.
+        DISADVANTAGEs: consumes much memory for storing intermediate valuse.
+        SOLUTIONs: adding scene classification module
+        ---[Biologically inspired features for scene classification in video surveillance.]
+        Temporal Differencing:
+        PRINCIPLE: the pixel-wise difference(逐像素差异) between two or three consecutive image to extract moving objects.
+        Most Frequently used:
+        [Mahadevan V, Vasconcelos N (2009) Segmentation of motion objects from surveillance video sequences using temporal differencing combined with multiple correlation.]
+        DISADVANTAGEs: It is poor in extracting all relevant pixels.
+                       It may be lead the cavities left inside moving entities. (only happen when the object moving slowly or it has uniform textures.)
+        SOLUTIONs: adding filtering algorithms.
+        ---[Xiaofeng L, Tao Z, Zaiwen L (2010) A novel method on moving-objects detection based on background subtraction and three frames differencing. ] (Three frame differencing image is used instead of using the current frame directly.)
+        Optical Flow:
+        It depends on the distribution of apparent velocities of movements of brightness patterns in an image and gives information about arrangement of objects viewed.
+        Usage: computationally complex for complex dynamic image analysis.
