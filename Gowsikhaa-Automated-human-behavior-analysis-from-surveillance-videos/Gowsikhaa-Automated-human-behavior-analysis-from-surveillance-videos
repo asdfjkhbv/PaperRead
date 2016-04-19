@@ -228,3 +228,12 @@ Abstract
 
       A background subtraction method which can handle all the issues like environmental changes in outdoor, indoor illumination changes will become more complex and can impact the performance of the system. A few combinations of these issues can be used by predict- ing the possibilities of environmental changes that could happen in the area under video surveillance. Thus domain specificity will lead to system accuracy for the required purpose.
       Each stage is interdependent. Handling all these challenges result in added complex- ity. Some of these challenges that fall under the ‘low-level technique’ category have already researched well. There are still a lot of unhandled areas that involve semantics. Usage of stan- dardized and fine-tuned semantics will lead to better performance and system understanding.
+5. Conclusions
+      Recognizing the background scene as indoor and outdoor is not sufficient,
+ it can be extended upon by further scene classification during pre-processing. Motion detection and tracking methodologies can be significantly enhanced using temporal segmentation and semantic descriptions. The classifier chosen for activity recognition has impact on the type of activity predicted. Most of the algorithms do not efficiently handle multiple object interaction recognition.Most of the algorithms do not efficiently handle multiple object interaction recognition. There is active research in progress in this area, with the increasing need for methods to find out the interaction between groups of individuals.
+      Activity recognition is currently done for events which take place
+ continuously; it can be extended to discrete event recognition methods. There can be two different scenarios with respect to discrete activities, with two persons far away from each other but involved in an activity (e.g. waving to each other) and the other one being, a single person performing the same activity repeatedly with pauses. Semantic descriptions play a vital role in finding the type of activity.
+      One of the areas which need further concentration is defining a
+ standardized format for semantic descriptions of different activities.
+      The methodologies in this survey are mainly classified with respect to
+ semantics involved, thus dividing the whole process into high level and low level. This survey reviewed a few algorithms in the domain of Human behaviour analysis including both the low-level and high-level techniques in order to get a better understanding of the state of art techniques.
