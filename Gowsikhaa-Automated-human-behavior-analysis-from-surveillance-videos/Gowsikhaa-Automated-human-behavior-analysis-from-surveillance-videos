@@ -198,4 +198,7 @@ Abstract
          Different aspects of an activity (Huang 2011) can be used through an ADD/OR tree method to predict the activity. To predict the activity of a single person, Liao et al. (2010) uses information such as gaze direction, spatio-temporal activity of a person and then extracts his/her behavior from the video.
         3D points:
          Instead of using 2D silhouettes for activity recognition, Li et al. (2010) has used 3D points. The comparative results show that activity recognition with 3D points give better prediction results. A homography mapping technique (Lao et al. 2010) is used for mapping the locations of all the landmarks in the area under surveillance. Similarly, in Yoshimitsu et al. (2010) loca- tion maps are used for representing the floor, fence, wall, obstacle and gate. Such methods must be used for scenes with absolutely static backgrounds.
-    
+
+      AND for chapter 3 ,there are some tables is very important for processing research .If someday I want to overview this Paper , the tables must be red.
+  4: Challenges in human behavior analysis.
+     
