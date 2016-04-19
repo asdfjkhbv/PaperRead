@@ -157,3 +157,48 @@ Abstract
         Applications which require recognition of simple poses, can just estimate the position of head, hands and legs to form a basic skeleton of the human (Lao et al. 2010). 2D modeling (Lao et al. 2010) is sufficient for this method. ---[Lao W, Han J, deWith PHN (2010) Flexible human behavior analysis framework for video surveillance applications.]
         For complex applications, along with head, hands and legs, the joints (like ankles, knees) and neck can be identified. This requires 3D modeling (Brown and Capson 2011) for representation.  ---[Brown JA, Capson DW (2011) A framework for 3D model-based visual tracking using a GPU-accelerated particle filter.]
         For vehicles, the shape of vehicles can be used to handle occlusion. The shape of the vehicle can be used to regenerate (Feris et al. 2011) the missing parts of the vehicle.---[Feris R, Petterson J, Siddiquie B, Brown L, Pankanti S (2011) Large-scale vehicle detection in challenging Urban surveillance environments.]
+3. High-level Processing Techniques
+        The mainly difference of the low-level and high-level technique is the help of the semantic.
+        The high-level techniques which is the last step of the infers annotations from video sequences.
+    3.1 Pre-processing
+        Pre-processing needs to avoid the false recognition of activities and detect correctly.  In phases like object classification, pose recognition and activity recognition, semantics are used to increase accuracy and predict activities that may happen in future ,in phases like {
+                object classification,
+                pose recognition
+                and activity recognition,
+        }.
+        Semantics can be included even at the tracking phase by including occlusion handling module and body part modeling relevant to the domain.
+    3.2 Human behavior recognition and analysis.
+        Actions may be POSEs or EVENTs.
+        The categorization of the activities list:
+        The simplest classification is normal & abnormal ---[Kiryati N, Riklin TR, Ivanchenko Y, Rochel S (2008) Real-time abnormal motion detection in surveillance video. ]
+        normal & unusual & abnormal ---[Foroughi H, Yazdi HS, Pourreza H, Javidi M (2008) An eigenspace-based approach for human fall detection using integrated time motion image and multi-class support vector machine.]
+        positive & neutral & negative activities ---[Park S, Aggarwal JK (2004) Semantic-level understanding of human actions and interactions using event hierarchy.]
+        symmetric & asymmetric activities ---[Lin W, Sun M-T, Poovendran R, Zhang Z (2010) Group event detection with a varying number of group members for video surveillance.]
+        recognizes three person activity by analysing two person activities.---[Lao W, Han J, deWith PHN (2010) Flexible human behavior analysis framework for video surveillance applications.]
+        Pose + less Semantics == event
+        Events + Spatio-Tempoeral constraints == Complex events
+        Complex events +Semantics Descriptions == Activity
+        Pose : the basic action can be directly identified . After modeling the body parts, poses can be estimated with lesser semantics. The methods of the semantics can use classifier or by simple rule based methodology.
+        Example1 :  the coordinates of the body parts or the generated skeleton is given as input to a classifier and then the poses are classified into sit, stand, lie, squat and relax.
+        ---[Lao W, Han J, deWith PHN (2010) Flexible human behavior analysis framework for video surveillance applications.]
+        Example2 :  draw a bounding rectangle around the object for which the pose must be identified.  From the bounding box, the height and width of the object can be calculated and ratio between them is compared with a range of threshold values to find out the exact pose.[Lao W, Han J, deWith PHN (2010) Flexible human behavior analysis framework for video surveillance applications.]
+        Contour or convex hull of the object can be used, to get a precise pose and instead of using the bounding box to find the ratio.
+        [Foroughi H, Yazdi HS, Pourreza H, Javidi M (2008) An eigenspace-based approach for human fall detection using integrated time motion image and multi-class support vector machine. ] use an approximated ellipse of the person.
+        [Park S, Aggarwal JK (2004) Semantic-level understanding of human actions and interactions using event hierarchy. ]body parts are first detected and then ellipses are constructed for each and every body part separately. Finally three convex hulls---(http://baike.baidu.com/link?url=fld41TeY99xplhfXEshHoXwWCM3NlcprKrzEPqunp1iu2MVwBHEeUUvfbcHgQ6-AkDPnuze-af_sL1iFCKYIqvtW9T1W3AaegKQ0RO-NOb6CWNy8mWTQ8-fBNLd0wDrsUaak1LVA73SP5mr_clikJ_) (head, body and legs) are formed for a single person.
+        Events:
+          can be identified from the basic pose are stand, walk and run.Speed is
+        Example of this. If a person is constant, he might is standing .So as walking and running, they are considerable of Speed.
+        Complex events:
+        are identified from poses using spatio-temporal constraints.---[Bremond F, Thonnat M, Zuniga M (2005) Video understanding framework for automatic behavior recognition.]
+        Spatial constraints is the distance between objects and objects' location.
+        Temporal constraints deal with the duration of /between actions.
+        Activity prediction:
+        is done using a classifier with the help of semantic descriptions. (After the poses and events are found.) Semantics give meaning to the actions. The preceding actions and current action can be correlated to obtain a result.
+        EXAMPLEs:
+         Different aspects of an activity (Huang 2011) can be used through an ADD/OR tree method to predict the activity. To predict the activity of a single person, Liao et al. (2010) uses information such as gaze direction, spatio-temporal activity of a person and then extracts his/her behavior from the video.
+        3D points:
+         Instead of using 2D silhouettes for activity recognition, Li et al. (2010) has used 3D points. The comparative results show that activity recognition with 3D points give better prediction results. A homography mapping technique (Lao et al. 2010) is used for mapping the locations of all the landmarks in the area under surveillance. Similarly, in Yoshimitsu et al. (2010) loca- tion maps are used for representing the floor, fence, wall, obstacle and gate. Such methods must be used for scenes with absolutely static backgrounds.
+
+      AND for chapter 3 ,there are some tables is very important for processing research .If someday I want to overview this Paper , the tables must be red.
+  4: Challenges in human behavior analysis.
+     
