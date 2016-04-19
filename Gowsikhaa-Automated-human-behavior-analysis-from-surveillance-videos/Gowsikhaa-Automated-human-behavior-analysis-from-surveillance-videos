@@ -185,3 +185,4 @@ Abstract
         Contour or convex hull of the object can be used, to get a precise pose and instead of using the bounding box to find the ratio.
         [Foroughi H, Yazdi HS, Pourreza H, Javidi M (2008) An eigenspace-based approach for human fall detection using integrated time motion image and multi-class support vector machine. ] use an approximated ellipse of the person.
         [Park S, Aggarwal JK (2004) Semantic-level understanding of human actions and interactions using event hierarchy. ]body parts are first detected and then ellipses are constructed for each and every body part separately. Finally three convex hulls---(http://baike.baidu.com/link?url=fld41TeY99xplhfXEshHoXwWCM3NlcprKrzEPqunp1iu2MVwBHEeUUvfbcHgQ6-AkDPnuze-af_sL1iFCKYIqvtW9T1W3AaegKQ0RO-NOb6CWNy8mWTQ8-fBNLd0wDrsUaak1LVA73SP5mr_clikJ_) (head, body and legs) are formed for a single person.
+        this line is just for test.
