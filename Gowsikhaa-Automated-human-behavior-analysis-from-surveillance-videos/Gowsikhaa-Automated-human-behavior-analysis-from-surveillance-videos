@@ -185,4 +185,17 @@ Abstract
         Contour or convex hull of the object can be used, to get a precise pose and instead of using the bounding box to find the ratio.
         [Foroughi H, Yazdi HS, Pourreza H, Javidi M (2008) An eigenspace-based approach for human fall detection using integrated time motion image and multi-class support vector machine. ] use an approximated ellipse of the person.
         [Park S, Aggarwal JK (2004) Semantic-level understanding of human actions and interactions using event hierarchy. ]body parts are first detected and then ellipses are constructed for each and every body part separately. Finally three convex hulls---(http://baike.baidu.com/link?url=fld41TeY99xplhfXEshHoXwWCM3NlcprKrzEPqunp1iu2MVwBHEeUUvfbcHgQ6-AkDPnuze-af_sL1iFCKYIqvtW9T1W3AaegKQ0RO-NOb6CWNy8mWTQ8-fBNLd0wDrsUaak1LVA73SP5mr_clikJ_) (head, body and legs) are formed for a single person.
-        this line is just for test.
+        Events:
+          can be identified from the basic pose are stand, walk and run.Speed is
+        Example of this. If a person is constant, he might is standing .So as walking and running, they are considerable of Speed.
+        Complex events:
+        are identified from poses using spatio-temporal constraints.---[Bremond F, Thonnat M, Zuniga M (2005) Video understanding framework for automatic behavior recognition.]
+        Spatial constraints is the distance between objects and objects' location.
+        Temporal constraints deal with the duration of /between actions.
+        Activity prediction:
+        is done using a classifier with the help of semantic descriptions. (After the poses and events are found.) Semantics give meaning to the actions. The preceding actions and current action can be correlated to obtain a result.
+        EXAMPLEs:
+         Different aspects of an activity (Huang 2011) can be used through an ADD/OR tree method to predict the activity. To predict the activity of a single person, Liao et al. (2010) uses information such as gaze direction, spatio-temporal activity of a person and then extracts his/her behavior from the video.
+        3D points:
+         Instead of using 2D silhouettes for activity recognition, Li et al. (2010) has used 3D points. The comparative results show that activity recognition with 3D points give better prediction results. A homography mapping technique (Lao et al. 2010) is used for mapping the locations of all the landmarks in the area under surveillance. Similarly, in Yoshimitsu et al. (2010) loca- tion maps are used for representing the floor, fence, wall, obstacle and gate. Such methods must be used for scenes with absolutely static backgrounds.
+    
