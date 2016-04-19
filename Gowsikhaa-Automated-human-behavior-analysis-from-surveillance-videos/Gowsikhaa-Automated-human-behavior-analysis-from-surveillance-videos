@@ -201,4 +201,30 @@ Abstract
 
       AND for chapter 3 ,there are some tables is very important for processing research .If someday I want to overview this Paper , the tables must be red.
   4: Challenges in human behavior analysis.
-     
+
+      • Cavities:
+            Acquiring the foreground without any cavities [Huang S-C (2011) An advanced motion detection algorithm with video quality analysis for video surveillance systems.] is a challenging task during the foreground segmentation phase.
+      • Human body modeling:
+            Similarly, modeling human body parts [Lao W, Han J, deWith PHN (2010) Flexible human behavior analysis framework for video surveillance applications.] help in tracking the human motion in successive frames. Incorrect identification of body part modeling will result in faulty pose prediction.
+      • Handling occlusions:
+            Occlusion handling [Brox T, Rosenhahn B, Gall J, Cremers D (2010) Combined region and motion-based 3D tracking of rigid and articulated objects.], must be done to track through people even when they cross each other, or when a person disappears from frame and reappears after a few seconds.
+      • Scene classification:
+            In the activity recognition phase for an environment with dynamic backgrounds, a better understanding of the background scene [Huang K, Tao D, Yuan Y, Li X, Tan T (2011) Biologically inspired features for scene classification in video surveillance.] will be useful. Even if the background scene is static, automatic background classification (example, indoor/outdoor) will make the system generic.
+      • Person identification:
+            Recognizing a previously seen person correctly when he/she reenters the scene, instead of treating him/her as a new person is also important.
+      • Techniques for activity perception:
+            Temporal segmentation, semantic descriptions for multiple people interaction patterns is to be considered during the activity perception stage.
+      • Cameras revisited:
+            Usage of a single camera is simple, but has drawbacks of occlusions due to the restricted view of a single camera. Multiple camera usage eliminates such a drawback, but has its own defects. Apart from the algorithms and techniques used for behavior analysis, the usage of appropriate type of cameras for applications and the number of cameras used also has an impact on the efficiency of the work.
+      • Modeling scenes:
+            Most of the systems model the scenes in 3D. The 2D images captured from a single camera will be mapped to a 3D world for better visualization and for later analysis. Recently, multiple cameras ([] Gandhi and Trivedi 2006) are used for tracking the same object from different perspectives. For a method which uses multiple cameras, a reference point is needed in the scene, so that the different views can be correlated with respect to a common point.
+      • Standardization:
+            There is no uniform standard for defining the human poses. The presence of such a standard would make the result comparisons easy and help in the uniformity of poses and semantic descriptions.
+      • Domain specificity:
+            The background methodologies and the types of actions recognized make the works more domains specific. Domain specificity can be due to the following factors,
+              • Using ground measurements (Lao et al. 2010)
+              • Using landmarks for combining views of multiple cameras
+              • Requirement of detecting domain specific activities
+
+      A background subtraction method which can handle all the issues like environmental changes in outdoor, indoor illumination changes will become more complex and can impact the performance of the system. A few combinations of these issues can be used by predict- ing the possibilities of environmental changes that could happen in the area under video surveillance. Thus domain specificity will lead to system accuracy for the required purpose.
+      Each stage is interdependent. Handling all these challenges result in added complex- ity. Some of these challenges that fall under the ‘low-level technique’ category have already researched well. There are still a lot of unhandled areas that involve semantics. Usage of stan- dardized and fine-tuned semantics will lead to better performance and system understanding.
