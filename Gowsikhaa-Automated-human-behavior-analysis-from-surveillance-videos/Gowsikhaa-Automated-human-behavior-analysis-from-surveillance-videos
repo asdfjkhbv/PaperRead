@@ -157,3 +157,22 @@ Abstract
         Applications which require recognition of simple poses, can just estimate the position of head, hands and legs to form a basic skeleton of the human (Lao et al. 2010). 2D modeling (Lao et al. 2010) is sufficient for this method. ---[Lao W, Han J, deWith PHN (2010) Flexible human behavior analysis framework for video surveillance applications.]
         For complex applications, along with head, hands and legs, the joints (like ankles, knees) and neck can be identified. This requires 3D modeling (Brown and Capson 2011) for representation.  ---[Brown JA, Capson DW (2011) A framework for 3D model-based visual tracking using a GPU-accelerated particle filter.]
         For vehicles, the shape of vehicles can be used to handle occlusion. The shape of the vehicle can be used to regenerate (Feris et al. 2011) the missing parts of the vehicle.---[Feris R, Petterson J, Siddiquie B, Brown L, Pankanti S (2011) Large-scale vehicle detection in challenging Urban surveillance environments.]
+3. High-level Processing Techniques
+        The mainly difference of the low-level and high-level technique is the help of the semantic.
+        The high-level techniques which is the last step of the infers annotations from video sequences.
+    3.1 Pre-processing
+        Pre-processing needs to avoid the false recognition of activities and detect correctly.  In phases like object classification, pose recognition and activity recognition, semantics are used to increase accuracy and predict activities that may happen in future ,in phases like {
+                object classification,
+                pose recognition
+                and activity recognition,
+        }.
+        Semantics can be included even at the tracking phase by including occlusion handling module and body part modeling relevant to the domain.
+    3.2 Human behavior recognition and analysis.
+        Actions may be POSEs or EVENTs.
+        The categorization of the activities list:
+        The simplest classification is normal & abnormal ---[Kiryati N, Riklin TR, Ivanchenko Y, Rochel S (2008) Real-time abnormal motion detection in surveillance video. ]
+        normal & unusual & abnormal ---[Foroughi H, Yazdi HS, Pourreza H, Javidi M (2008) An eigenspace-based approach for human fall detection using integrated time motion image and multi-class support vector machine.]
+        positive & neutral & negative activities ---[Park S, Aggarwal JK (2004) Semantic-level understanding of human actions and interactions using event hierarchy.]
+        symmetric & asymmetric activities ---[Lin W, Sun M-T, Poovendran R, Zhang Z (2010) Group event detection with a varying number of group members for video surveillance.]
+        recognizes three person activity by analysing two person activities.---[Lao W, Han J, deWith PHN (2010) Flexible human behavior analysis framework for video surveillance applications.]
+        Pose and 
