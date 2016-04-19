@@ -175,4 +175,13 @@ Abstract
         positive & neutral & negative activities ---[Park S, Aggarwal JK (2004) Semantic-level understanding of human actions and interactions using event hierarchy.]
         symmetric & asymmetric activities ---[Lin W, Sun M-T, Poovendran R, Zhang Z (2010) Group event detection with a varying number of group members for video surveillance.]
         recognizes three person activity by analysing two person activities.---[Lao W, Han J, deWith PHN (2010) Flexible human behavior analysis framework for video surveillance applications.]
-        Pose and 
+        Pose + less Semantics == event
+        Events + Spatio-Tempoeral constraints == Complex events
+        Complex events +Semantics Descriptions == Activity
+        Pose : the basic action can be directly identified . After modeling the body parts, poses can be estimated with lesser semantics. The methods of the semantics can use classifier or by simple rule based methodology.
+        Example1 :  the coordinates of the body parts or the generated skeleton is given as input to a classifier and then the poses are classified into sit, stand, lie, squat and relax.
+        ---[Lao W, Han J, deWith PHN (2010) Flexible human behavior analysis framework for video surveillance applications.]
+        Example2 :  draw a bounding rectangle around the object for which the pose must be identified.  From the bounding box, the height and width of the object can be calculated and ratio between them is compared with a range of threshold values to find out the exact pose.[Lao W, Han J, deWith PHN (2010) Flexible human behavior analysis framework for video surveillance applications.]
+        Contour or convex hull of the object can be used, to get a precise pose and instead of using the bounding box to find the ratio.
+        [Foroughi H, Yazdi HS, Pourreza H, Javidi M (2008) An eigenspace-based approach for human fall detection using integrated time motion image and multi-class support vector machine. ] use an approximated ellipse of the person.
+        [Park S, Aggarwal JK (2004) Semantic-level understanding of human actions and interactions using event hierarchy. ]body parts are first detected and then ellipses are constructed for each and every body part separately. Finally three convex hulls---(http://baike.baidu.com/link?url=fld41TeY99xplhfXEshHoXwWCM3NlcprKrzEPqunp1iu2MVwBHEeUUvfbcHgQ6-AkDPnuze-af_sL1iFCKYIqvtW9T1W3AaegKQ0RO-NOb6CWNy8mWTQ8-fBNLd0wDrsUaak1LVA73SP5mr_clikJ_) (head, body and legs) are formed for a single person.
