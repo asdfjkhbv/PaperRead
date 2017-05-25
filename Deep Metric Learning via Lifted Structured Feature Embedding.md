@@ -72,7 +72,7 @@ It aimed at minimizes the distance between  a pair of examples with the same cla
 
 ### Triplet embedding INFO
 
-compare there image in a batch ${x^i_a, x^i_p, x^i_n}$,
+compare there image in a batch <img src="http://latex.codecogs.com/gif.latex?\{x^i_a,x^i_p,x^i_n\}" title="{x^i_a,x^i_p,x^i_n}" />
 > - <img src="http://latex.codecogs.com/gif.latex?x^i_a" title="x^i_a" /> and <img src="http://latex.codecogs.com/gif.latex?x^i_p" title="x^i_p" /> has same label
 > - <img src="http://latex.codecogs.com/gif.latex?x^i_a" title="x^i_a" /> and <img src="http://latex.codecogs.com/gif.latex?x^i_n" title="x^i_n" /> has different label
 
