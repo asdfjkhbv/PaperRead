@@ -1,0 +1,1 @@
+Matching 3D geometry has a long history starting in the early days of computer graphics and vision.With the rise of *commodity range sensing technologies*(**商品距离传感技术**), this research has beacome paramount to many applications including object pose estimation, object retrieval, 3D reconstruction, and camera localization.
