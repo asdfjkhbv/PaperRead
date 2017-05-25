@@ -1,10 +1,5 @@
----
-title: <NOTE> Deep Metric Learning via Lifted Structured Feature Embedding 
-tags: Note,PaperRead, Structured Feature Embedding, 3D shape retrieval
-grammar_cjkRuby: true
----
-
-
+# paper
+Tags: Note,PaperRead, Structured Feature Embedding, 3D shape retrieval
 ## Abstract INFO
 >  **key sentence:** * With the remarkable success from the state of art convolutional neural networks, recent works <**1,3**> have shown promissing results on discriminatively training the networks to learn semantic feature embeddings where similar examples are mapped close to each otheer and dissmilar examples are mapped farther apart. *
 
