@@ -61,3 +61,25 @@ on shor means: learning liongs image from little lion images.
 ## Reviews INFO
 ### contrastive embedding
 It aimed at minimizes the distance between  a pair of examples with the same class label and penalizes the negative pair distances for being smaller, than the margin $\alpha$
+
+<a href="http://www.codecogs.com/eqnedit.php?latex=J&space;=&space;\frac{1}{m}\displaystyle\sum_{(i,j)}^{m/2}&space;y_{i,j}&space;D_{i,j}^2&space;&plus;&space;(1-y_{i,j})[\alpha&space;-&space;D_{i,j}]_{&plus;}^{2}" target="_blank"><img src="http://latex.codecogs.com/gif.latex?J&space;=&space;\frac{1}{m}\displaystyle\sum_{(i,j)}^{m/2}&space;y_{i,j}&space;D_{i,j}^2&space;&plus;&space;(1-y_{i,j})[\alpha&space;-&space;D_{i,j}]_{&plus;}^{2}" title="J = \frac{1}{m}\displaystyle\sum_{(i,j)}^{m/2} y_{i,j} D_{i,j}^2 + (1-y_{i,j})[\alpha - D_{i,j}]_{+}^{2}" /></a>
+
+
+>- $ y_{i,j}$  means the pairs label is same or not
+>-  $ m$ means the batch images number
+> - $D_{i,j}^2$  means $D_{i,j}^2 = ||f(x_i)-f(x_j)||^2$ 
+> - [element]_+ means max(0, element) 
+
+### Triplet embedding INFO
+
+compare there image in a batch ${x^i_a, x^i_p, x^i_n}$,
+> - $x^i_a$ and $x^i_p$ has same label
+> - $x^i_a$ and $x^i_n$ has different label
+
+the training process encourage the network to find an embedding where the distance between $x^i_a$ and $x^i_n$ larger than the distance between $x^i_a$ and $x^i_p$ plus margin $\alpha$.
+
+**COST FUNCTION**
+
+$J=\frac{3}{2m}\displaystyle\sum_{m/3}^{i}[D^2_{ia,ip}-D^2_{ia, in}+ \alpha]_+$
+
+$- D_{ia,ip}=||f(x^i_a)-f(x^i_p)||^2$
