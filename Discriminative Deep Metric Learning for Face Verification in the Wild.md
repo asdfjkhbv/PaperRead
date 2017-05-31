@@ -27,7 +27,7 @@ metric has two types
 	Map input into a higher dimensional space.
 2. Metric learning 
 	Metric learning is  
-	<img src="http://latex.codecogs.com/gif.latex?d_M(s_i,x_j)=\sqrt(x_i-x_j)^TM(x_i-x_j)" />
+	<img src="http://latex.codecogs.com/gif.latex?d_M(s_i,x_j)=\sqrt{(x_i-x_j)^TM(x_i-x_j)}" />
 	
 	
 	where is <img src="http://latex.codecogs.com/gif.latex?M=W^TW" />
