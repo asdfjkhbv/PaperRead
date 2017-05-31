@@ -36,4 +36,4 @@ if the <img src="http://latex.codecogs.com/gif.latex?M"/> is <img src="http://la
 	the distance was defined by Indian stastician mahalanobis distance. which means 
 	<img src="http://latex.codecogs.com/gif.latex?x_1,x_2"/> means the two sample from the inputs 
 	and the mahalanobis distance is <img src="http://latex.codecogs.com/gif.latex?D=(x_i-x_j)^T\sigma^{-1}(x_i-x_j)"/>
-	if the M matric is positive definite, the <img src="http://latex.codecogs.com/gif.latex?||x-y||_A=0/> is possible even if <img src="http://latex.codecogs.com/git.latex?x\neg{y}/>
+	if the M matric is positive definite, the <img src="http://latex.codecogs.com/gif.latex?||x-y||_A=0"/> is possible even if <img src="http://latex.codecogs.com/git.latex?x\neg{y}"/>
