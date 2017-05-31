@@ -49,6 +49,6 @@ where <img src="http://latex.codecogs.com/gif.latex?f" /> is nn.
 and <img src="http://latex.codecogs.com/gif.latex?J_1" /> is the distance loss fuction 
 <img src="http://latex.codecogs.com/gif.latex?J_2" /> is regularization loss fuction (why it use regularization fucnction?)
 
-<img src="http://latex.codecogs.com/gif.latex?J_1=\frac{1}{2}\displaystyle\sigma_{i,j}g\Big\(1-l_{ij}(\tau-d_f^2(\mathbf{x}_i-\mathbf{x}_j))\Big\)" />
+<img src="http://latex.codecogs.com/gif.latex?J_1=\frac{1}{2}\Sigma_{i,j}g(1-l_{ij}(\tau-d_f^2(\mathbf{x}_i-\mathbf{x}_j)))" />
 
 <img src="http://latex.codecogs.com/gif.latex?J_1=\frac{1}{2}\displaystyle\sigma_{i,j}g\Big\(1-l_{ij}(\tau-d_f^2(\mathbf{x}_i-\mathbf{x}_j))\Big\)" title="J_1=\frac{1}{2}\displaystyle\sigma_{i,j}g\Big\(1-l_{ij}(\tau-d_f^2(\mathbf{x}_i-\mathbf{x}_j))\Big\)" />
