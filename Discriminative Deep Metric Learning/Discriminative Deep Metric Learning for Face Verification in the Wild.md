@@ -39,4 +39,16 @@ if the <img src="http://latex.codecogs.com/gif.latex?M"/> is <img src="http://la
 	if the M matric is positive definite, the <img src="http://latex.codecogs.com/gif.latex?||x-y||_A=0"/> is possible even if <img src="http://latex.codecogs.com/gif.latex?x\neq{y}" />.
 	
 DDML distance equation is <img src="http://latex.codecogs.com/gif.latex?d^2_f(\mathbf{x}_i-\mathbf{x}_j)=||f(\mathbf{x_i})-f(\mathbf{x_j})||^2_2" />. 
-where <img src="http://latex.codecogs.com/gif.latex?f" />is nn.
+
+where <img src="http://latex.codecogs.com/gif.latex?f" /> is nn.
+
+## Loss Fucntion
+
+<img src="http://latex.codecogs.com/gif.latex?\argmin{J=J_1+J_2}_f" />
+
+and <img src="http://latex.codecogs.com/gif.latex?J_1" /> is the distance loss fuction 
+<img src="http://latex.codecogs.com/gif.latex?J_2" /> is regularization loss fuction (why it use regularization fucnction?)
+
+<img src="http://latex.codecogs.com/gif.latex?J_1=\frac{1}{2}\displaystyle\sigma_{i,j}g\Big\(1-l_{ij}(\tau-d_f^2(\mathbf{x}_i-\mathbf{x}_j))\Big\)" />
+
+<img src="http://latex.codecogs.com/gif.latex?J_1=\frac{1}{2}\displaystyle\sigma_{i,j}g\Big\(1-l_{ij}(\tau-d_f^2(\mathbf{x}_i-\mathbf{x}_j))\Big\)" title="J_1=\frac{1}{2}\displaystyle\sigma_{i,j}g\Big\(1-l_{ij}(\tau-d_f^2(\mathbf{x}_i-\mathbf{x}_j))\Big\)" />
