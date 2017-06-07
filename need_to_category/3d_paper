@@ -1,5 +1,7 @@
 2006-What and Where 3D Object Recognition with Accurate Pose.pdf
 201-NIPS-3D Object Proposals for Accurate Object Class Detection.pdf
+> Target: Synthesized Images from 3D Models.b Solove two problems: scarcity of training data with viewpoint annotations, and a lack of poweful features.
+
 2014-arxiv-Lifting Object Detection Datasets into 3D.pdf
 2014-arxiv-On Rendering Synthetic Images for Training an Object Detector.pdf
 2014-ECCV-Learning 6D Object Pose Estimation using 3D Object Coordinates.pdf
