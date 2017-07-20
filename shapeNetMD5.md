@@ -1,4 +1,4 @@
-chair 03001627
+#chair 03001627
 
 cp -r shapenetcore/03001627/1b7bef12c554c1244c686b8271245d1b/* shapeData/chair/01
 
@@ -40,7 +40,7 @@ cp -r shapenetcore/03001627/8ad35dbc44f40be1492d9da2668ec34c/* shapeData/chair/1
 
 cp -r shapenetcore/03001627/8cfbde91dc175e2ea54b9afa882a89ed/* shapeData/chair/20
 
-sofa 04256520
+# sofa 04256520
 
 cp -r shapenetcore/04256520/144cee9408bcdc3ad062f9c4aeccfad2/* shapeData/sofa/01
 
@@ -82,7 +82,7 @@ cp -r shapenetcore/04256520/99175131585f4cfded403132b02528bd/* shapeData/sofa/19
 
 cp -r shapenetcore/04256520/4991f4fe771cae7f18b14db3b83de9ff/* shapeData/sofa/20
 
-tvmonitor 03211117
+# tvmonitor 03211117
 
 cp -r shapenetcore/03211117/2f07cae4c7809f0bcf5a37a70014c623/* shapeData/tvmonitor/01
 
@@ -124,7 +124,7 @@ cp -r shapenetcore/03211117/cc3adfb500c1d443b441e189e5a85c02/* shapeData/tvmonit
 
 cp -r shapenetcore/03211117/df8e098d4dbcb5b2ccc4d915989bc424/* shapeData/tvmonitor/20
 
-table 04379243
+# table 04379243
 
 cp -r shapenetcore/04379243/4a3839f687aad9122d98de61f824e5b2/* shapeData/table/01
 
@@ -166,7 +166,7 @@ cp -r shapenetcore/04379243/db49ebac740bdb91d016fde69633b7dc/* shapeData/table/1
 
 cp -r shapenetcore/04379243/e94b1ab02a3264c89eaa55bb236fb6e1/* shapeData/table/20
 
-pillow
+# pillow
 
 cp -r shapenetcore/03938244/530cc7dd793df95f8f5ae2c97614087a/* shapeData/pillow/01
 
@@ -208,7 +208,7 @@ cp -r shapenetcore/03938244/68131b4f51579263f7b57f419ab26207/* shapeData/pillow/
 
 cp -r shapenetcore/03938244/ec4b9c23be44b35992cd8215a5562ce/* shapeData/pillow/20
 
-bench
+# bench
 
 cp -r shapenetcore/02828884/48c9e1679ada2949fd8f87bd7d4c2514/* shapeData/bench/01
 
@@ -250,7 +250,7 @@ cp -r shapenetcore/02828884/1d94afb9894bf975e76bc197b3a3ffc0/* shapeData/bench/1
 
 cp -r shapenetcore/02828884/e2be5da815f914f22250bf58700b4d8f/* shapeData/bench/20
 
-bed
+# bed
 
 cp -r shapenetcore/04256520/fa71486d68dbe48bf27b78f69ac93684/* shapeData/bed/01
 
@@ -292,7 +292,7 @@ cp -r shapenetcore/02818832/dc5a7937cf3d5ce2d6547ce8d3c3ea11/* shapeData/bed/19
 
 cp -r shapenetcore/02818832/7c8eb4ab1f2c8bfa2fb46fb8b9b1ac9f/* shapeData/bed/20
 
-cabinet 
+# cabinet 
 
 cp -r shapenetcore/02933112/bb5c331b32e39d0d3ec45bd2bc895504/* shapeData/cabinet/01
 
@@ -334,7 +334,7 @@ cp -r shapenetcore/02933112/19127cb1f535bf2c62c9e7b595148d6a/* shapeData/cabinet
 
 cp -r shapenetcore/02933112/2993b6f0fa043f2744b0bdbb4386e313/* shapeData/cabinet/20
 
-counter
+# counter
 
 cp -r shapenetcore/04379243/5a935225ccc57f09e6a4ada36a392e0/* shapeData/counter/01
 
@@ -376,7 +376,7 @@ cp -r shapenetcore/04379243/fa7a8f6d4c33a4081f4e3943babe5979/* shapeData/counter
 
 cp -r shapenetcore/04379243/564b7a755e3003da64fad3c7b88e6060/* shapeData/counter/20
 
-bookshelf
+# bookshelf
 
 cp -r shapenetcore/02871439/dcd43c744d65d713c351d52e48bdbbe/* shapeData/bookshelf/01
 
