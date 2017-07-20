@@ -1,87 +1,171 @@
 chair 03001627
+
 cp -r shapenetcore/03001627/1b7bef12c554c1244c686b8271245d1b/* shapeData/chair/01
+
 cp -r shapenetcore/03001627/1cd152cfd71cd314e2798a633e84d70b/* shapeData/chair/02
+
 cp -r shapenetcore/03001627/1eb1a8acd4185f49492d9da2668ec34c/* shapeData/chair/03
+
 cp -r shapenetcore/03001627/1ec5a88141aefca9cf6e4dd7ee69d71f/* shapeData/chair/04
+
 cp -r shapenetcore/03001627/2d1ebd7356968c0919fb4103277a6b93/* shapeData/chair/05
+
 cp -r shapenetcore/03001627/3ae2857e04641093b0957d845ac33749/* shapeData/chair/06
+
 cp -r shapenetcore/03001627/4aa9b5829edec8ac4671d97b0fd17f51/* shapeData/chair/07
+
 cp -r shapenetcore/03001627/4b2ede169dcc83ce4591019e9d133858/* shapeData/chair/08
+
 cp -r shapenetcore/03001627/4b3ddc244c521f5c6a9ab6fc87e1604e/* shapeData/chair/09
+
 cp -r shapenetcore/03001627/4d3bf8ef55b4e4fcdb66736e6592e424/* shapeData/chair/10
+
 cp -r shapenetcore/03001627/4ed25bf015585031490ad276cd2af3a4/* shapeData/chair/11
+
 cp -r shapenetcore/03001627/5ad4512976afc746564eaedaeaa04f28/* shapeData/chair/12
+
 cp -r shapenetcore/03001627/4dff2fded7130c631a8db2c23945f1fa/* shapeData/chair/13
+
 cp -r shapenetcore/03001627/5c6c95a9a99d452e1d2651c636d3967d/* shapeData/chair/14
+
 cp -r shapenetcore/03001627/5c427d9fe3c76b356c07fcbf2661d108/* shapeData/chair/15
+
 cp -r shapenetcore/03001627/5f1b45295c72cdf03a4a5c95fa1b0032/* shapeData/chair/16
+
 cp -r shapenetcore/03001627/6bcba04c2e45150779368d1198f406e7/* shapeData/chair/17
+
 cp -r shapenetcore/03001627/6ec02d7a508434f1b0957d845ac33749/* shapeData/chair/18
+
 cp -r shapenetcore/03001627/8ad35dbc44f40be1492d9da2668ec34c/* shapeData/chair/19
+
 cp -r shapenetcore/03001627/8cfbde91dc175e2ea54b9afa882a89ed/* shapeData/chair/20
+
 sofa 04256520
+
 cp -r shapenetcore/04256520/144cee9408bcdc3ad062f9c4aeccfad2/* shapeData/sofa/01
+
 cp -r shapenetcore/04256520/64ee5d22281ef431de03ab2a27ba7531/* shapeData/sofa/02
+
 cp -r shapenetcore/04256520/99ec7e5d04f32409d45611d32fd7733d/* shapeData/sofa/03
+
 cp -r shapenetcore/04256520/241a341105cf3dfe593ebeeedbff73b/* shapeData/sofa/04
+
 cp -r shapenetcore/04256520/841cb38f7447dc698e4182295c92f949/* shapeData/sofa/05
+
 cp -r shapenetcore/04256520/4180d98246089cf014038d588fd1342f/* shapeData/sofa/06
+
 cp -r shapenetcore/04256520/8673ce2da94bfe4ff42b5131862a2dd9/* shapeData/sofa/07
+
 cp -r shapenetcore/04256520/81018f492277b7649f13e3294f6a3574/* shapeData/sofa/08
+
 cp -r shapenetcore/04256520/241876321940a2c976e9713f57a5fcb6/* shapeData/sofa/09
+
 cp -r shapenetcore/04256520/bd3cb48163e43810f29b3e56ea45251a/* shapeData/sofa/10
+
 cp -r shapenetcore/04256520/cb643270a86e8fcc19fb4103277a6b93/* shapeData/sofa/11
+
 cp -r shapenetcore/04256520/fcff900ce37820983f7e27638e63d848/* shapeData/sofa/12
+
 cp -r shapenetcore/04256520/fce717669ca521884e1a9fae5403e01f/* shapeData/sofa/13
+
 cp -r shapenetcore/04256520/dd572d69cfa263bfdb10cbf40397412f/* shapeData/sofa/14
+
 cp -r shapenetcore/04256520/d6d69d04e3c34465e9fa215d22832290/* shapeData/sofa/15
+
 cp -r shapenetcore/04256520/cbe2e3145eea246cff40be78d008f276/* shapeData/sofa/16
+
 cp -r shapenetcore/04256520/ca7dc4294b1080acf256e6841810978e/* shapeData/sofa/17
+
 cp -r shapenetcore/04256520/c6c8b57de92a243abb3f330b15ee1442/* shapeData/sofa/18
+
 cp -r shapenetcore/04256520/99175131585f4cfded403132b02528bd/* shapeData/sofa/19
+
 cp -r shapenetcore/04256520/4991f4fe771cae7f18b14db3b83de9ff/* shapeData/sofa/20
+
 tvmonitor 03211117
+
 cp -r shapenetcore/03211117/2f07cae4c7809f0bcf5a37a70014c623/* shapeData/tvmonitor/01
+
 cp -r shapenetcore/03211117/2f1975216fc24c5e572bfae97b5793b0/* shapeData/tvmonitor/02
+
 cp -r shapenetcore/03211117/3f15446861936b20eb1a50f8f2ea3a88/* shapeData/tvmonitor/03
+
 cp -r shapenetcore/03211117/5c79b27734380b011a9e831992816ab/* shapeData/tvmonitor/04
+
 cp -r shapenetcore/03211117/9b764d286359e0f9cb84789183638105/* shapeData/tvmonitor/05
+
 cp -r shapenetcore/03211117/21ad9636dfcc9578c78df40cf2e9097a/* shapeData/tvmonitor/06
+
 cp -r shapenetcore/03211117/31daffe57909195455357c338ec9641/* shapeData/tvmonitor/07
+
 cp -r shapenetcore/03211117/31ea65d446d980162a544c9c0bfe248c/* shapeData/tvmonitor/08
+
 cp -r shapenetcore/03211117/42a81c2a4a261f1e1bb088904f7cb154/* shapeData/tvmonitor/09
+
 cp -r shapenetcore/03211117/46cb55835a88ca85eba70eb27950150e/* shapeData/tvmonitor/10
+
 cp -r shapenetcore/03211117/61d0f582475b3d2089b367279b017ccc/* shapeData/tvmonitor/11
+
 cp -r shapenetcore/03211117/95df08344f4737e078785e24320d5ee9/* shapeData/tvmonitor/12
+
 cp -r shapenetcore/03211117/225d37286bed9bb9dbf53b03c847b004/* shapeData/tvmonitor/13
+
 cp -r shapenetcore/03211117/8440ff1637f2c6d7ebe17c8dfb911d2c/* shapeData/tvmonitor/14
+
 cp -r shapenetcore/03211117/a8e109c66a0fcce7a87d866b539e4b68/* shapeData/tvmonitor/15
+
 cp -r shapenetcore/03211117/b9ef07b9ea14f4fb1dc17d595f9add09/* shapeData/tvmonitor/16
+
 cp -r shapenetcore/03211117/b0c1b6c373c4ef3a83f09c7d0a6695f0/* shapeData/tvmonitor/17
+
 cp -r shapenetcore/03211117/b72579335543691423c841f9d5051936/* shapeData/tvmonitor/18
+
 cp -r shapenetcore/03211117/cc3adfb500c1d443b441e189e5a85c02/* shapeData/tvmonitor/19
+
 cp -r shapenetcore/03211117/df8e098d4dbcb5b2ccc4d915989bc424/* shapeData/tvmonitor/20
+
 table 04379243
+
 cp -r shapenetcore/04379243/4a3839f687aad9122d98de61f824e5b2/* shapeData/table/01
+
 cp -r shapenetcore/04379243/6a8df7fe3bed16f736ac40071701c687/* shapeData/table/02
+
 cp -r shapenetcore/04379243/8e009300d7671a33b2a5818319136c5b/* shapeData/table/03
+
 cp -r shapenetcore/04379243/9d832f72888892e66d907bf61e189d9d/* shapeData/table/04
+
 cp -r shapenetcore/04379243/32f116e50ba1dcde7ff6ace05b36a5/* shapeData/table/05
+
 cp -r shapenetcore/04379243/35a65ddfe8690ccfbc96558434dabb4/* shapeData/table/06
+
 cp -r shapenetcore/04379243/47e24c3995150688d810b14a81e12eca/* shapeData/table/07
+
 cp -r shapenetcore/04379243/71ec472682954cee353c1d159a8a8422/* shapeData/table/08
+
 cp -r shapenetcore/04379243/83b8e64089968ae8fd3feb4581507302/* shapeData/table/09
+
 cp -r shapenetcore/04379243/96dd123d4b16ce2afc62a892407efc0c/* shapeData/table/10
+
 cp -r shapenetcore/04379243/594a7dedea7abb21f77e460087130a90/* shapeData/table/11
+
 cp -r shapenetcore/04379243/1040cd764facf6981190e285a2cbc9c/* shapeData/table/12
+
 cp -r shapenetcore/04379243/64298fc3b7cb8171eaf288f952624966/* shapeData/table/13
+
 cp -r shapenetcore/04379243/9b7b33f2892e7bb9562c69acee9936b0/* shapeData/table/14
+
 cp -r shapenetcore/04379243/580cac53a1f9a799446ad0d387c02a3/* shapeData/table/15
+
 cp -r shapenetcore/04379243/64298fc3b7cb8171eaf288f952624966/* shapeData/table/16
+
 cp -r shapenetcore/04379243/9130392b20b977813c41e9c62d62dbcd/* shapeData/table/17
+
 cp -r shapenetcore/04379243/d1ef98cd329a71d1d8a323bf2c61bf7a/* shapeData/table/18
+
 cp -r shapenetcore/04379243/db49ebac740bdb91d016fde69633b7dc/* shapeData/table/19
+
 cp -r shapenetcore/04379243/e94b1ab02a3264c89eaa55bb236fb6e1/* shapeData/table/20
+
 pillow
 
 cp -r shapenetcore/03938244/530cc7dd793df95f8f5ae2c97614087a/* shapeData/pillow/01
