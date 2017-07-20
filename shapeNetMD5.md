@@ -1,4 +1,4 @@
-#chair 03001627
+# chair 03001627
 
 cp -r shapenetcore/03001627/1b7bef12c554c1244c686b8271245d1b/* shapeData/chair/01
 
